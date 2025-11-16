@@ -10,8 +10,17 @@
 
 #![feature(error_generic_member_access)]
 
+#[cfg(unix)]
 pub mod client;
+
+#[cfg(unix)]
 pub mod command;
+
+#[cfg(unix)]
 pub(crate) mod convert;
+
+#[cfg(unix)]
 pub mod launch;
+
+#[cfg(unix)]
 pub(crate) mod service;
